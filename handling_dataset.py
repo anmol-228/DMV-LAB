@@ -1,8 +1,13 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+from pathlib import Path
 
-df = pd.read_csv(r"D:\Anmol_DMV_Lab\updated_dataset.csv")
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+DATASET_PATH = Path(__file__).resolve().parent / "data" / "updated_dataset.csv"
+
+df = pd.read_csv(DATASET_PATH)
+print("Loaded dataset from:", DATASET_PATH)
 
 print("Missing Values Before:\n", df.isnull().sum())
 

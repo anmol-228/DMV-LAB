@@ -1,0 +1,2 @@
+Enter X values separated by space: 1 2 3 4 5
+Enter Y values separated by space: 2 5 3 7 6

@@ -1,0 +1,18 @@
+Loaded dataset from: /Users/mypc/Documents/New project/github-maintenance/DMV-LAB/data/updated_dataset.csv
+Missing Values Before:
+ title        1
+episodes     1
+score        1
+scored_by    1
+rank         1
+dtype: int64
+
+Missing Values After:
+ title        0
+episodes     0
+score        0
+scored_by    0
+rank         0
+dtype: int64
+
+Total Outliers Fixed: 7

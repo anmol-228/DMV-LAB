@@ -1,0 +1,2 @@
+=== Complete Graph Generator ===
+Enter number of vertices (greater than 3): 6

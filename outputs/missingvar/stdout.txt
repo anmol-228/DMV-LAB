@@ -1,0 +1,21 @@
+Original Data:
+   Name   Age  Marks
+0    A  20.0   85.0
+1    B   NaN   90.0
+2    C  22.0    NaN
+3    D   NaN   88.0
+4    E  25.0    NaN
+
+Missing Values Count:
+ Name     0
+Age      2
+Marks    2
+dtype: int64
+
+After Handling Missing Values:
+   Name        Age  Marks
+0    A  20.000000   85.0
+1    B  22.333333   90.0
+2    C  22.000000   88.0
+3    D  22.333333   88.0
+4    E  25.000000   88.0

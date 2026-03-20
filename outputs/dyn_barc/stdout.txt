@@ -1,0 +1,2 @@
+Enter categories separated by space: A B C D
+Enter values separated by space: 12 18 9 14

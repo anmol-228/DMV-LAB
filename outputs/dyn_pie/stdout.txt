@@ -1,0 +1,2 @@
+Enter labels separated by space: Python Java C SQL
+Enter values separated by space: 35 30 20 15

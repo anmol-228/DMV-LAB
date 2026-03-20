@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 
 data = {
@@ -15,15 +14,21 @@ print("Original Data:\n", df)
 
 print("\nMissing Values Count:\n", df.isnull().sum())
 
-df["Age"].fillna(df["Age"].mean(), inplace=True)        # fill with mean
-df["Marks"].fillna(df["Marks"].median(), inplace=True)  # fill with median
+df["Age"] = df["Age"].fillna(df["Age"].mean())
+df["Marks"] = df["Marks"].fillna(df["Marks"].median())
 
 print("\nAfter Handling Missing Values:\n", df)
 
-sns.heatmap(pd.DataFrame(data).isnull(), cbar=False)
+plt.figure(figsize=(6, 3))
+plt.imshow(pd.DataFrame(data).isnull(), cmap="Reds", aspect="auto")
+plt.yticks(range(len(df)), df["Name"])
+plt.xticks(range(2), ["Age", "Marks"])
 plt.title("Missing Values Heatmap (Before Handling)")
 plt.show()
 
-sns.heatmap(df.isnull(), cbar=False)
+plt.figure(figsize=(6, 3))
+plt.imshow(df.isnull(), cmap="Greens", aspect="auto")
+plt.yticks(range(len(df)), df["Name"])
+plt.xticks(range(2), ["Age", "Marks"])
 plt.title("Missing Values Heatmap (After Handling)")
 plt.show()
